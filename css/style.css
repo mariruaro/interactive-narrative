@@ -19,6 +19,10 @@ body {
     font-size: 70px;
 }
 
+#home{
+    margin: 0 30px
+}
+
 #home p{
     margin-bottom: 70px;
 }
@@ -38,3 +42,8 @@ body {
     border:1px solid #5552C2;
   }
 
+@media screen and (max-width: 720px) {
+    #home h1{
+        font-size: 60px;
+    }
+}
