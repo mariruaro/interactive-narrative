@@ -337,10 +337,13 @@ input{
 	margin-bottom:10px;
   }
   #story{
-	margin: 3.5em 0px 2.5em 0px;
+	margin: 3.5em 0px 50px 0px;
   }
   .passage{
 	text-align:left;
+  }
+  body[data-tags~="calendar"] { 
+  	background-repeat: initial;
   }
 }
 
@@ -348,9 +351,12 @@ input{
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
 $(document.head).find('#style-ui-bar').remove();
 
-window.onbeforeunload = function () {
-    window.sessionStorage.setItem('twine-reload-flag', 'true');
-};
+var isOnIOS = navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i);
+var eventName = isOnIOS ? "pagehide" : "beforeunload";
+
+window.addEventListener(eventName, function (event) { 
+		window.sessionStorage.setItem('twine-reload-flag', 'true');
+});
 
 postdisplay['refresh-taker'] = function (t) {
 
@@ -364,10 +370,6 @@ postdisplay['refresh-taker'] = function (t) {
     } 
 
 };
-
-
-
-
 
 
 
