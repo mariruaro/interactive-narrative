@@ -294,10 +294,10 @@ body {
 
 /* Links */
 a.link-internal, a.link-external {
-  color: #552AC2;
+  color: #8056ea;
 }
 a.link-internal:hover, a.link-external:hover {
-  color: #5552C2;
+  color: #563a9e;
   text-decoration: none;
 }
 
@@ -358,6 +358,7 @@ input{
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
 $(document.head).find('#style-ui-bar').remove();
 
@@ -399,9 +400,18 @@ postdisplay['refresh-taker'] = function (t) {
 
 
 
-</script><tw-tag name="Você" color="blue"></tw-tag>,<tw-tag name="Amigo(a)" color="green"></tw-tag>,<tw-tag name="Risco" color="red"></tw-tag><tw-passagedata pid="1" name="Início" tags="black" position="2901,103" size="100,100">Em seu quarto envolvido pelo escuro e silêncio, você repassava a notícia que seus pais haviam recém compartilhado. Em uma semana você daria adeus a tudo que conhecia e mais importante adeus a...
 
-&lt;&lt;textbox &quot;$friend&quot; &quot;&quot; autofocus&gt;&gt; \
+</script>
+
+<script>
+  $( document ).ready(function() {
+      $('#textbox-friend').attr("placeholder", "Digite um nome...")
+  });
+</script>
+
+<tw-tag name="Você" color="blue"></tw-tag>,<tw-tag name="Amigo(a)" color="green"></tw-tag>,<tw-tag name="Risco" color="red"></tw-tag><tw-passagedata pid="1" name="Início" tags="black" position="2901,103" size="100,100">Em seu quarto envolvido pelo escuro e silêncio, você repassava a notícia que seus pais haviam recém compartilhado. Em uma semana você daria adeus a tudo que conhecia e mais importante adeus a...
+
+&lt;&lt;textbox &quot;$friend&quot; &quot;&quot; autofocus &gt;&gt; \
 &lt;&lt;button &quot;Confirmar&quot;&gt;&gt;
 	&lt;&lt;set $friend to $friend.trim()&gt;&gt;
 
@@ -612,7 +622,7 @@ Durante esse período seus maiores medos haviam se concretizados, você estava v
 
 A maioria do seu tempo era gasto no isolamento do seu quarto, sem a mínima vontade de sair e explorar novos lugares ou quanto menos interagir com outras pessoas. $friend havia se esforçado tanto para manter a comunicação entre vocês, mas você não queria causar preocupação. Então começaram os longos períodos de mensagens ignoradas, no começo um dia, dois dias, depois semanas, até você simplesmente parar de responder. Você amava $friend, mas como poderia descarregar seu sofrimento sem lhe causar sofrimento também.
 
-Interrompendo seus pensamentos uma mensagem de $friend havia chegado, com a intensão de apenas visualizar e não responder você ...
+Interrompendo seus pensamentos uma mensagem de $friend havia chegado, com a intenção de apenas visualizar e não responder você ...
 
 [[abriu a mensagem.-&gt;Abriu]]</tw-passagedata><tw-passagedata pid="45" name="Abriu" tags="deep" position="2799,2201" size="100,100">Na mensagem, $friend se colocava a disposição para ouvir sem qualquer julgamento quando você estivesse confortável para conversar. 
 
@@ -620,7 +630,7 @@ Interrompendo seus pensamentos uma mensagem de $friend havia chegado, com a inte
 
 </tw-passagedata><tw-passagedata pid="46" name="Enviou" tags="phone-two" position="3704,2195" size="100,100">Depois de quatro dias que sua mensagem havia sido enviada perguntando para $friend se tudo estava certo e se precisava de alguém para conversar, a resposta veio ...
 
-$friend expressava que não via mais motivos para viver, descrevendo o quanto a solidão que sentia estava lhe afetava, que não tinha respondido suas mensagens pois só de pensar que atrapalharia a nova vida que você se esforçava tanto para construir com seus problemas já sentia culpa e que não possuía esperança que as coisas melhorariam. Em suas frases dizia que não aguentava mais, que gostaria de dormir e nunca mais acordar e que não podia fazer nada.
+$friend expressava que não via mais motivos para viver, descrevendo o quanto a solidão que sentia estava lhe afetando, que não tinha respondido suas mensagens pois só de pensar que atrapalharia a nova vida que você se esforçava tanto para construir com seus problemas já sentia culpa e que não possuía esperança que as coisas melhorariam. Em suas frases dizia que não aguentava mais, que gostaria de dormir e nunca mais acordar e que não podia fazer nada.
 
 Sua reação foi ...
 
@@ -659,7 +669,7 @@ Precisando conversar com alguém você enviou uma mensagem para $friend, que com
 
 [[...-&gt;Final salvável amigo]]</tw-passagedata><tw-passagedata pid="56" name="Final bom amigo" tags="friends" position="3599,2801" size="100,100">Vocês haviam criado uma rotina de comunicação todas as noites, onde compartilhavam os acontecimentos de cada dia. 
 
-Entendendo melhor o que fazer ao se deparar com uma pessoa em riso de suicídio, você mantinha um estado de alerta para possíveis sinais e sabia a importância de não abandonar alguém nessa situação. 
+Entendendo melhor o que fazer ao se deparar com uma pessoa em risco de suicídio, você mantinha um estado de alerta para possíveis sinais e sabia a importância de não abandonar alguém nessa situação. 
 
 Seu amor por $friend não havia diminuído, mas aumentado ao observar com admiração sua história de superação.</tw-passagedata><tw-passagedata pid="57" name="Final salvável amigo" tags="black" position="3799,2799" size="100,100">No futuro você se esforçaria para se sensibilizar mais com o sofrimento de outra pessoa, as vezes era difícil de sair de suas próprias perspectivas e julgamentos. Porém o bem-estar dos outros principalmente mental sempre deveria ser considerado. Como o de friend, que com o acompanhamento profissional e o contato com o CVV uma recuperação havia sido encaminhada. Você se certificaria de estar ao seu lado em todas as etapas que estavam por vir. </tw-passagedata><tw-passagedata pid="58" name="Final contato amigo" tags="black" position="3397,2802" size="100,100">A notícia algumas semanas depois, que $friend estava recebendo o tratamento adequado veio por parte de seus pais. Eles haviam entrando em contato com você para informar que $friend, recebia toda ajuda necessária e pediam se você poderia fazer parte de seu grupo de apoio.
 
